@@ -7,7 +7,7 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  background-color: #000000;
+  background-color: grey;
   color: #39ff14;
 }
 
@@ -15,14 +15,22 @@ nav {
   height: 50px;
   width: 50px;
   border: 1px solid white;
+  background-image: url('Assets/logo.png');
   border-radius: 50%;
+  margin-left: 20px;
 }
 
 .nav-links {
-  /* border: 1px solid black; */
-  margin-right: 20px;
-  color: #39ff14; /* Warna teks neon hijau */
-  margin-top: 10px; /* Add margin to create space from the top */
+  /* border: 1px solid white; */
+  border-left: solid 1px white;
+  padding: 15px;
+  color: #39ff14;
+  text-decoration: none;
+}
+
+.nav-links:hover {
+  color: white;
+  transition: ease-out 0.5s;
 }
 
 .banner {
@@ -48,4 +56,24 @@ nav {
   height: 75px;
   border: 1px solid black;
   border-radius: 50%;
+}
+
+h4 {
+  text-align: center;
+}
+
+.message-section {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: start; */
+  flex: 1;
+}
+
+.result {
+  flex: 1;
+  border: 1px solid black;
+}
+
+.form-container {
+  flex-direction: row;
 }

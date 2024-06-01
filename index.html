@@ -3,35 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style.css" />
     <title>My Website</title>
   </head>
   <body>
     <nav>
-        <div class="logo">
-        </div>
+      <div class="logo">
+        <img src="Assets/logo.png" style="height: 50px; width: 50px" alt="logo" />
+      </div>
 
-        <section>
-          <a href="" class="nav-links">Home</a>
-          <a href="" class="nav-links">Our Facilites</a>
-          <a href="" class="nav-links">Message Us</a>
-        </section>
+      <section>
+        <a href="#home" class="nav-links">Home</a>
+        <a href="#facilities" class="nav-links">Our Facilites</a>
+        <a href="#message" class="nav-links">Message Us</a>
+      </section>
     </nav>
 
     <hr />
 
-    <section>
-      <section>
+    <section style="margin-left: 1%; margin-right: 1%">
+      <section id="home">
         <header>
-          <h1>
-            Hi Guest, Welcome to Website
-          </h1>
+          <h1>Hi Guest, Welcome to Website</h1>
         </header>
 
         <article>
-          <p>
-            Ini adalah website latihan pertama.
-          </p>
+          <p>Ini adalah website latihan pertama.</p>
 
           <div class="banner" />
         </article>
@@ -39,7 +36,7 @@
 
       <hr />
 
-      <section>
+      <section id="facilities">
         <header>
           <h1>Our Facilities</h1>
         </header>
@@ -49,24 +46,69 @@
             <div class="facility-item"></div>
             <h4>Facility 1</h4>
           </div>
-          
+
           <div>
             <div class="facility-item"></div>
             <h4>Facility 2</h4>
           </div>
-          
+
           <div>
             <div class="facility-item"></div>
             <h4>Facility 3</h4>
           </div>
-          
         </article>
       </section>
 
-      <section></section>
+      <hr />
+
+      <section id="message">
+        <header>
+          <h1>Message Us</h1>
+        </header>
+
+        <section class="message-section">
+          <section style="flex: 1">
+            <form action="" method="post" class="form-container">
+              <label for="name" style="flex-grow: 1">Nama :</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                style="flex-grow: 2; margin-left: 10px"
+                placeholder="Nama"
+              />
+              <br />
+
+              <label for="date">Tanggal lahir :</label>
+              <input type="date" name="date" id="date" /> <br />
+
+              <label for="gender">Jenis kelamin :</label>
+              <input type="radio" name="gender" id="male" value="male" />
+              <label for="male">Laki-laki</label>
+              <input type="radio" name="gender" id="female" value="female" />
+              <label for="female">Perempuan</label> <br />
+
+              <label for="pesan">Pesan :</label>
+              <textarea name="pesan" id="pesan" placeholder="Pesan"></textarea>
+              <br />
+
+              <button type="submit">Submit</button>
+            </form>
+          </section>
+
+          <section class="result" style="flex: 1">
+            <div class="form-result"></div>
+          </section>
+        </section>
+      </section>
     </section>
 
     <footer>
+      <section
+        style="display: flex; flex-direction: row; justify-content: flex-end"
+      >
+        <p>© 2024 My Website</p>
+      </section>
     </footer>
 
     <script src="JS/script.js"></script>
