@@ -1,1 +1,51 @@
 /* styling */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+  color: #39ff14;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.nav-links {
+  /* border: 1px solid black; */
+  margin-right: 20px;
+  color: #39ff14; /* Warna teks neon hijau */
+  margin-top: 10px; /* Add margin to create space from the top */
+}
+
+.banner {
+  height: 578px;
+  width: 100%;
+  background: url("https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.facility {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.facility-item {
+  width: 75px;
+  height: 75px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
