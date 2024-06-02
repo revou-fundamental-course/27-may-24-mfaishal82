@@ -2,6 +2,10 @@
 body {
   margin: 0;
   padding: 0;
+  background-image: url('/Assets/bg.png');
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  /* background-position: center center; */
 }
 
 hr {
@@ -11,22 +15,30 @@ hr {
 nav {
   display: flex;
   justify-content: space-between;
-  background-color: grey;
+  background-color: rgb(131, 131, 131);
   color: #39ff14;
+  padding: 5px;
+  align-items: center;
 }
 
 .logo {
   height: 50px;
   width: 50px;
   border: 1px solid white;
-  background-image: url('Assets/logo.png');
   border-radius: 50%;
   margin-left: 20px;
 }
 
+.logo:hover{
+  border: 1px solid #39ff14;
+  transition: ease-in-out 0.5s;
+}
+
 .nav-links {
   /* border: 1px solid white; */
+  align-items: center;
   border-left: solid 1px white;
+  margin-top: auto;
   padding: 15px;
   color: #39ff14;
   text-decoration: none;
@@ -40,7 +52,7 @@ nav {
 .banner {
   height: 578px;
   width: 100%;
-  background: url("https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+  background: url("/Assets/banner.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -50,17 +62,31 @@ nav {
   border-radius: 10px;
 }
 
-.facility {
+.banner:hover {
+  border: double #95ff82;
+  transition: 0.5s;
+}
+
+.feature {
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
 }
 
-.facility-item {
-  width: 75px;
-  height: 75px;
+.feature-item {
+  width: 100px;
+  height: 100px;
   border: 1px solid black;
   border-radius: 50%;
+}
+
+.feature-item img {
+  height: 100px; 
+  width: 100px;
+}
+
+.feature-item:hover {
+  border: #95ff82 1px double;
 }
 
 h4 {
@@ -76,7 +102,8 @@ h4 {
 
 .result {
   flex: 1;
-  border: 1px solid black;
+  border: 1px dashed black;
+  border-radius: 5px;
 }
 
 /* .form-container {
@@ -87,6 +114,10 @@ table {
   /* justify-content: center; */
   /* border: 1px solid black; */
   width: 100%;
+}
+
+form table tr td {
+  text-align: justify;
 }
 
 input[type='text'],[type='date']{
@@ -105,4 +136,16 @@ textarea {
 button:hover {
   background-color: rgb(179, 179, 179);
   transition: ease-in-out 0.5s;
+}
+
+footer section {
+  display: flex;
+  justify-content: space-between;
+  margin: 1%;
+}
+
+footer:hover {
+  color: #1fcc00;
+  transition: ease-in-out 0.5s;
+  /* cursor: pointer; */
 }
