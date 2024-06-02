@@ -2,7 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('/Assets/bg.png');
+  background-image: url('Assets/bg.png');
   background-size: cover;
   /* background-repeat: no-repeat; */
   /* background-position: center center; */
@@ -52,7 +52,7 @@ nav {
 .banner {
   height: 578px;
   width: 100%;
-  background: url("/Assets/banner.jpg");
+  background: url("Assets/banner.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
