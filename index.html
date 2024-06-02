@@ -9,7 +9,9 @@
   <body>
     <nav>
       <div class="logo">
-        <img src="Assets/logo.png" style="height: 50px; width: 50px" alt="logo" />
+        <a href="/">
+          <img src="Assets/logo.png" style="height: 50px; width: 50px" alt="logo" />
+        </a>
       </div>
 
       <section>
@@ -69,30 +71,30 @@
         <section class="message-section">
           <section style="flex: 1">
             <form action="" method="post" class="form-container">
-              <label for="name" style="flex-grow: 1">Nama :</label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                style="flex-grow: 2; margin-left: 10px"
-                placeholder="Nama"
-              />
-              <br />
+              <table>
+                  <tr>
+                    <td><label for="name" >Nama</label></td>
+                    <td>: <input type="text" name="name" id="name" placeholder="Nama"></td>
+                  </tr>
+                  <tr>
+                    <td><label for="date">Tanggal lahir </label></td>
+                    <td>: <input type="date" name="date" id="date"></td>
+                  </tr>
+                  <tr>
+                    <td><label for="gender">Jenis kelamin </label></td>
+                    <td>: <input type="radio" name="gender" id="male" value="male" />
+                    <label for="male">Laki-laki</label>
+                    <input type="radio" name="gender" id="female" value="female" />
+                    <label for="female">Perempuan</label></td>
+                  </tr>
+                  <tr>
+                    <td><label for="pesan">Pesan </label></td>
+                    <td>: <textarea name="pesan" id="pesan" placeholder="Pesan"></textarea></td>
+              </table>
 
-              <label for="date">Tanggal lahir :</label>
-              <input type="date" name="date" id="date" /> <br />
-
-              <label for="gender">Jenis kelamin :</label>
-              <input type="radio" name="gender" id="male" value="male" />
-              <label for="male">Laki-laki</label>
-              <input type="radio" name="gender" id="female" value="female" />
-              <label for="female">Perempuan</label> <br />
-
-              <label for="pesan">Pesan :</label>
-              <textarea name="pesan" id="pesan" placeholder="Pesan"></textarea>
-              <br />
-
-              <button type="submit">Submit</button>
+              <div>
+                <button type="submit" style="width: 96%; border-radius: 10px; border: 0; padding: 10px; cursor: pointer;">Submit</button>
+              </div>
             </form>
           </section>
 
@@ -103,9 +105,11 @@
       </section>
     </section>
 
+    <hr style="margin-top: 2%;">
+
     <footer>
       <section
-        style="display: flex; flex-direction: row; justify-content: flex-end"
+        style="display: flex; flex-direction: row; justify-content: flex-end; margin-right: 1%"
       >
         <p>© 2024 My Website</p>
       </section>
