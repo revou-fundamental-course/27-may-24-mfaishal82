@@ -3,35 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="icon" type="image/png" href="Assets/logo.png">
     <title>My Website</title>
   </head>
   <body>
     <nav>
-        <div class="logo">
-        </div>
+      <div class="logo">
+        <a href="/">
+          <img
+            src="Assets/logo.png"
+            style="height: 50px; width: 50px"
+            alt="logo"
+          />
+        </a>
+      </div>
 
-        <section>
-          <a href="" class="nav-links">Home</a>
-          <a href="" class="nav-links">Our Facilites</a>
-          <a href="" class="nav-links">Message Us</a>
-        </section>
+      <section>
+        <a href="#home" class="nav-links"> Home</a>
+        <a href="#features" class="nav-links">Our Features</a>
+        <a href="#message" class="nav-links">Message Us</a>
+      </section>
     </nav>
 
     <hr />
 
-    <section>
-      <section>
+    <section
+      style="
+        margin-top: 3%;
+        margin-left: 1%;
+        margin-right: 1%;
+        background-color: white;
+        padding-bottom: 1%;
+        padding-left: 1%;
+        padding-right: 1%;
+        border-radius: 10px;
+      "
+    >
+      <section id="home" style="padding-top: 1px">
         <header>
-          <h1>
-            Hi Guest, Welcome to Website
-          </h1>
+          <h1>Hi Guest, Welcome to Digital World</h1>
         </header>
 
         <article>
-          <p>
-            Ini adalah website latihan pertama.
-          </p>
+          <p>Ini adalah website latihan.</p>
 
           <div class="banner" />
         </article>
@@ -39,34 +54,133 @@
 
       <hr />
 
-      <section>
+      <section id="features">
         <header>
-          <h1>Our Facilities</h1>
+          <h1>Our Features</h1>
         </header>
 
-        <article class="facility">
+        <article class="feature">
           <div>
-            <div class="facility-item"></div>
-            <h4>Facility 1</h4>
+            <a href="https://digimon.fandom.com/wiki/Digivice#Digimon_Adventure_Digivice">
+            <div class="feature-item">
+              <img id="feature1" src="Assets/digivice1.png" alt="feature1" />
+            </div>
+            </a>
+            <h4>Digivice</h4>
           </div>
-          
+
           <div>
-            <div class="facility-item"></div>
-            <h4>Facility 2</h4>
+            <a href="https://digimon.fandom.com/wiki/Digivice#D-3_Digivice">
+            <div class="feature-item">
+              <img id="feature2" src="Assets/digivice2.png" alt="feature2" />
+            </div>
+            </a>
+            <h4>D-3 Digivice</h4>
           </div>
-          
+
           <div>
-            <div class="facility-item"></div>
-            <h4>Facility 3</h4>
+            <a href="https://digimon.fandom.com/wiki/Digivice#D-Power">
+            <div class="feature-item">
+              <img id="feature3" src="Assets/digivice3.png" alt="feature3" />
+            </div>
+            </a>
+            <h4>D-Power</h4>
           </div>
-          
         </article>
       </section>
 
-      <section></section>
+      <hr />
+
+      <section id="message">
+        <header>
+          <h1>Message Us</h1>
+        </header>
+
+        <section class="message-section">
+          <section style="flex: 1">
+            <form action="/" method="post" class="form-container">
+              <table>
+                <tr>
+                  <td><label for="name">Nama</label></td>
+                  <td>
+                    :
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Nama"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="date">Tanggal lahir </label></td>
+                  <td>: <input type="date" name="date" id="date" /></td>
+                </tr>
+                <tr>
+                  <td><label for="gender">Jenis kelamin </label></td>
+                  <td>
+                    :
+                    <input type="radio" name="gender" id="male" value="male" />
+                    <label for="male">Laki-laki</label>
+                    <input
+                      type="radio"
+                      name="gender"
+                      id="female"
+                      value="female"
+                    />
+                    <label for="female">Perempuan</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="pesan">Pesan </label></td>
+                  <td>
+                    :
+                    <textarea
+                      name="pesan"
+                      id="pesan"
+                      placeholder="Pesan"
+                    ></textarea>
+                  </td>
+                </tr>
+              </table>
+
+              <div>
+                <button
+                  type="submit"
+                  style="
+                    width: 96%;
+                    border-radius: 10px;
+                    border: 0;
+                    padding: 10px;
+                    cursor: pointer;
+                  "
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </section>
+
+          <section class="result">
+            <div class="form-result"></div>
+          </section>
+
+        </section>
+
+      </section>
+    
     </section>
 
+    <hr style="margin-top: 2%" />
+
     <footer>
+      <section>
+        <audio controls>
+          <source src="Assets/butterfly.mp3" type="audio/mpeg" />
+        </audio>
+
+        <p>© 2024 My Website</p>
+      </section>
     </footer>
 
     <script src="JS/script.js"></script>
