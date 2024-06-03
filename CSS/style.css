@@ -12,6 +12,10 @@ hr {
   margin: 0;
 }
 
+h1 {
+  font-size: 23px;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -52,13 +56,13 @@ nav {
 .banner {
   height: 578px;
   width: 100%;
-  /* background: url("/Assets/banner.jpg"); */
+  /* background: url("/assets/banner.jpg"); */
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid black;s */
+  border: double white;
   border-radius: 10px;
 }
 
@@ -76,7 +80,7 @@ nav {
 .feature-item {
   width: 100px;
   height: 100px;
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 50%;
 }
 
@@ -86,7 +90,7 @@ nav {
 }
 
 .feature-item:hover {
-  border: #95ff82 1px double;
+  border: #95ff82 1px solid;
 }
 
 h4 {
@@ -114,6 +118,10 @@ table {
   /* justify-content: center; */
   /* border: 1px solid black; */
   width: 100%;
+}
+
+input[type='radio']:hover {
+  cursor: pointer;
 }
 
 form table tr td {
