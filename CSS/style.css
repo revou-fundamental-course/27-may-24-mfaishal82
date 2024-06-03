@@ -110,12 +110,7 @@ h4 {
   border-radius: 5px;
 }
 
-/* .form-container {
-  align-self: first;
-} */
-
 table {
-  /* justify-content: center; */
   /* border: 1px solid black; */
   width: 100%;
 }
@@ -134,9 +129,9 @@ input[type='text'],[type='date']{
   margin: 3px;
 }
 
-textarea {
+table tr td textarea {
   padding: 5px;
-  width: 90%;
+  width: 91%;
   height: 100px;
   border-radius: 3px;
 }
