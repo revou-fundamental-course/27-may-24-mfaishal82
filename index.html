@@ -31,7 +31,7 @@
     <section class="container">
       <section id="home" style="padding-top: 1px">
         <header>
-          <h1>Hi <span id="name-guest">Guest</span>, Welcome to Digital World Site</h1>
+          <h1>Hi <span id="name-guest">...</span>, Welcome to Digital World Site</h1>
         </header>
 
         <article>
@@ -92,7 +92,7 @@
           <section style="flex: 1">
             <section style="flex: 1">
 
-              <form onsubmit="return validateInput()" class="form-container">
+              <form name="formDigiSite" onsubmit="return validateInput()" class="form-container">
                 <table>
                   <tr>
                     <td><label for="name">Nama</label></td>
@@ -104,7 +104,7 @@
                         id="name"
                         placeholder="Nama"
                       /> <br>
-                      <div id="errorName" class="error">Ini error </div>
+                      <div id="errorName" class="error"></div>
                     </td>
                   </tr>
                   <tr>
@@ -162,7 +162,7 @@
               <p style="margin-bottom: 10px;"><b>Current Time: </b> <span id="date"></span></p>
               <p><b>Nama: </b> <span id="nameInput"></span></p>
               <p><b>Tanggal lahir: </b> <span id="birthDateInput"></span></p>
-              <p><b>Jenis kelamin: </b> <span id="gender"></span></p>
+              <p><b>Jenis kelamin: </b> <span id="genderInput"></span></p>
               <p><b>Pesan: </b> <span id="messageInput"></span></p>
             </div>
           </section>
