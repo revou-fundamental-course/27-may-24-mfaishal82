@@ -90,59 +90,69 @@
 
         <section class="message-section">
           <section style="flex: 1">
-            <form action="/" method="post" class="form-container">
-              <table>
-                <tr>
-                  <td><label for="name">Nama</label></td>
-                  <td><label for=""> : </label></td>
-                  <td>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="Nama"
-                    />
-                  </td>
-                </tr>
-                <tr>
-                  <td><label for="birthDate">Tanggal lahir </label></td>
-                  <td><label for=""> : </label></td>
-                  <td><input type="date" name="birthDate" id="birthDate" /></td>
-                </tr>
-                <tr>
-                  <td><label for="gender">Jenis kelamin </label></td>
-                  <td><label for=""> : </label></td>
-                  <td>
-                    <input type="radio" name="gender" id="male" value="male" />
-                    <label for="male">Laki-laki</label>
-                    <input
-                      type="radio"
-                      name="gender"
-                      id="female"
-                      value="female"
-                    />
-                    <label for="female">Perempuan</label>
-                  </td>
-                </tr>
-                <tr style="text-align: left; vertical-align: top;">
-                  <td><label for="pesan">Pesan </label></td>
-                  <td><label for=""> : </label></td>
-                  <td>
-                    <textarea
-                      name="pesan"
-                      id="pesan"
-                      placeholder="Pesan"
-                    ></textarea>
-                  </td>
-                </tr>
-              </table>
+            <section style="flex: 1">
+              <form onsubmit="return validateInput()" class="form-container">
+                <table>
+                  <tr>
+                    <td><label for="name">Nama</label></td>
+                    <td><label for=""> : </label></td>
+                    <td>
+                      <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Nama"
+                      /> <br>
+                      <div id="errorName" class="error"></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="birthDate">Tanggal lahir </label></td>
+                    <td><label for=""> : </label></td>
+                    <td><input type="date" name="birthDate" id="birthDate" /> 
+                      <br>
+                      <div id="errorBirthDate" class="error"></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="gender">Jenis kelamin </label></td>
+                    <td><label for=""> : </label></td>
+                    <td>
+                      <input type="radio" name="gender" id="male" value="male" />
+                      <label for="male">Laki-laki</label>
+                      <input
+                        type="radio"
+                        name="gender"
+                        id="female"
+                        value="female"
+                      />
+                      <label for="female">Perempuan</label>
+                      <br>
+                      <span id="errorGender" class="error"></span>
+                    </td>
+                  </tr>
+                  <tr style="text-align: left; vertical-align: top;">
+                    <td><label for="pesan">Pesan </label></td>
+                    <td><label for=""> : </label></td>
+                    <td>
+                      <textarea
+                        name="pesan"
+                        id="pesan"
+                        placeholder="Pesan"
+                      ></textarea>
+                      <br>
+                      <span id="errorMessage" class="error"></span>
+                    </td>
+                  </tr>
+                </table>
 
-              <div>
-                <button class="submit-btn" type="submit">
-                  Submit
-                </button>
-              </div>
-            </form>
+                <div>
+                  <button class="submit-btn" type="submit">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </section>
           </section>
 
           <section class="result">

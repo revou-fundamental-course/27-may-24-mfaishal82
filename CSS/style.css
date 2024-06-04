@@ -17,6 +17,10 @@ h1 {
   font-size: 23px;
 }
 
+h1:hover {
+  color: #1fcc00;
+}
+
 .container {
   margin-top: 3%;
   margin-left: 3%;
@@ -164,6 +168,10 @@ button:hover {
 
 .form-result p {
   margin: 0; 
+}
+
+.error {
+  color: red;
 }
 
 footer section {
