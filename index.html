@@ -31,15 +31,16 @@
     <section class="container">
       <section id="home" style="padding-top: 1px">
         <header>
-          <h1>Hi Guest, Welcome to Digital World Site</h1>
+          <h1>Hi <span id="name-guest">Guest</span>, Welcome to Digital World Site</h1>
         </header>
 
         <article>
-          <p>Ini adalah website latihan.</p>
+          <p>Selamat datang di DigiSite, destinasi utama bagi para penggemar Digimon! DigiSite adalah platform yang didedikasikan untuk mengumpulkan informasi, berita, dan konten menarik seputar dunia Digimon.</p>
 
           <div >
             <img class="banner" src="Assets/banner.jpg" alt="banner" />
           </div>
+
         </article>
       </section>
 
@@ -104,9 +105,9 @@
                   </td>
                 </tr>
                 <tr>
-                  <td><label for="date">Tanggal lahir </label></td>
+                  <td><label for="birthDate">Tanggal lahir </label></td>
                   <td><label for=""> : </label></td>
-                  <td><input type="date" name="date" id="date" /></td>
+                  <td><input type="date" name="birthDate" id="birthDate" /></td>
                 </tr>
                 <tr>
                   <td><label for="gender">Jenis kelamin </label></td>
@@ -145,7 +146,13 @@
           </section>
 
           <section class="result">
-            <div class="form-result"></div>
+            <div class="form-result">
+              <p style="margin-bottom: 10px;"><b>Current Time: </b> <span id="date"></span></p>
+              <p><b>Nama: </b> <span id="nameInput"></span></p>
+              <p><b>Tanggal lahir: </b> <span id="birthDateInput"></span></p>
+              <p><b>Jenis kelamin: </b> <span id="gender"></span></p>
+              <p><b>Pesan: </b> <span id="messageInput"></span></p>
+            </div>
           </section>
 
         </section>

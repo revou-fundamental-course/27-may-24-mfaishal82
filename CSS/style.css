@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a9e66ccf-90b4-4967-af80-9c1973b2a5a9/dbwbmgc-e62fe5d1-f3c6-4be3-baea-031cecfd0e4e.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2E5ZTY2Y2NmLTkwYjQtNDk2Ny1hZjgwLTljMTk3M2IyYTVhOVwvZGJ3Ym1nYy1lNjJmZTVkMS1mM2M2LTRiZTMtYmFlYS0wMzFjZWNmZDBlNGUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0._XtfdMMwGLEcCcOipFoc7ns6ZWDdRwvs3CcXdaw-KFM);
+  
   /* background-size: cover; */
   /* background-repeat: no-repeat; */
   /* background-position: center; */
@@ -154,6 +155,15 @@ button:hover {
   background-color: rgb(179, 179, 179);
   color: white;
   transition: ease-in-out 0.5s;
+}
+
+.form-result {
+  padding-top: 50px;
+  padding-left: 10px;
+}
+
+.form-result p {
+  margin: 0; 
 }
 
 footer section {
