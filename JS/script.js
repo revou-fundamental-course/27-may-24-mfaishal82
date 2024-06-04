@@ -19,11 +19,6 @@ function validateInput() {
     const birthDateInput = document.forms['formDigiSite']['birthDate'].value
     const genderInput = document.forms['formDigiSite']['gender'].value
     const messageInput = document.forms['formDigiSite']['pesan'].value
-
-    // if(!nameInput || !birthDateInput || !genderInput || !messageInput) {
-    //     alert("Data tidak boleh kosong!")
-    //     return false
-    // }
     
     if(!nameInput) {
         document.getElementById("errorName").innerText = "Nama tidak boleh kosong!";
@@ -53,14 +48,11 @@ function validateInput() {
     setFormResult(nameInput, birthDateInput, genderInput, messageInput);
     
     return false;
-    // return true;
 }
 
-// validateInput()
-
 function setFormResult(name, birthDate, gender, pesan) {
-    document.getElementById("nameInput").innerHTML = name
-    document.getElementById("birthDateInput").innerHTML = birthDate
-    document.getElementById("genderInput").innerHTML = gender === "male" ? "Laki-laki" : "Perempuan"
-    document.getElementById("messageInput").innerHTML = pesan
+    document.getElementById("nameInput").innerText = name
+    document.getElementById("birthDateInput").innerText = birthDate.split("-").reverse().join("/")
+    document.getElementById("genderInput").innerText = gender === "male" ? "Laki-laki" : "Perempuan"
+    document.getElementById("messageInput").innerText = pesan
 }
