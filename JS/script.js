@@ -15,12 +15,10 @@ getName()
 document.getElementById("date").innerText = new Date()
 
 function validateInput() {
-    const nameInput = document.getElementById("name").value
-    const birthDateInput = document.forms['form-container']['birthDate'].value
-    const genderInput = document.forms['form-container']['gender'].value
-    const messageInput = document.forms['form-container']['pesan'].value
-
-    console.log(nameInput)
+    const nameInput = document.forms['formDigiSite']['name'].value
+    const birthDateInput = document.forms['formDigiSite']['birthDate'].value
+    const genderInput = document.forms['formDigiSite']['gender'].value
+    const messageInput = document.forms['formDigiSite']['pesan'].value
 
     // if(!nameInput || !birthDateInput || !genderInput || !messageInput) {
     //     alert("Data tidak boleh kosong!")
@@ -32,27 +30,27 @@ function validateInput() {
         return false;
     }
 
-    // if(!birthDateInput) {
-    //     document.getElementById("errorBirthDate").innerText = "Tanggal lahir tidak boleh kosong!"
-    //     return false
-    // }
+    if(!birthDateInput) {
+        document.getElementById("errorBirthDate").innerText = "Tanggal lahir tidak boleh kosong!"
+        return false
+    }
 
-    // if(!genderInput) {
-    //     document.getElementById("errorGender").innerText = "Jenis kelamin tidak boleh kosong!"
-    //     return false
-    // }
+    if(!genderInput) {
+        document.getElementById("errorGender").innerText = "Jenis kelamin tidak boleh kosong!"
+        return false
+    }
 
-    // if(messageInput.split(" ").length < 5) {
-    //     document.getElementById("errorMessage").innerText = "Pesan tidak boleh kosong & harus terdiri dari minimal 5 kata!"
-    //     return false
-    // }
+    if(messageInput.split(" ").length < 5) {
+        document.getElementById("errorMessage").innerText = "Pesan harus terdiri dari minimal 5 kata!"
+        return false
+    }
 
-    // document.getElementById("errorName").innerText = "";
-    // document.getElementById("errorBirthDate").innerText = "";
-    // document.getElementById("errorGender").innerText = "";
-    // document.getElementById("errorMessage").innerText = "";
+    document.getElementById("errorName").innerText = "";
+    document.getElementById("errorBirthDate").innerText = "";
+    document.getElementById("errorGender").innerText = "";
+    document.getElementById("errorMessage").innerText = "";
     
-    // setFormResult(nameInput, birthDateInput, genderInput, messageInput);
+    setFormResult(nameInput, birthDateInput, genderInput, messageInput);
     
     return false;
     // return true;
@@ -61,8 +59,8 @@ function validateInput() {
 // validateInput()
 
 function setFormResult(name, birthDate, gender, pesan) {
-    document.getElementById("nameInput").innerText = name
-    document.getElementById("birthDateInput").innerText = birthDate
-    document.getElementById("genderInput").innerText = gender
-    document.getElementById("messageInput").innerText = pesan
+    document.getElementById("nameInput").innerHTML = name
+    document.getElementById("birthDateInput").innerHTML = birthDate
+    document.getElementById("genderInput").innerHTML = gender
+    document.getElementById("messageInput").innerHTML = pesan
 }
