@@ -61,6 +61,6 @@ function validateInput() {
 function setFormResult(name, birthDate, gender, pesan) {
     document.getElementById("nameInput").innerHTML = name
     document.getElementById("birthDateInput").innerHTML = birthDate
-    document.getElementById("genderInput").innerHTML = gender
+    document.getElementById("genderInput").innerHTML = gender === "male" ? "Laki-laki" : "Perempuan"
     document.getElementById("messageInput").innerHTML = pesan
 }
