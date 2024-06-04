@@ -91,6 +91,7 @@
         <section class="message-section">
           <section style="flex: 1">
             <section style="flex: 1">
+
               <form onsubmit="return validateInput()" class="form-container">
                 <table>
                   <tr>
@@ -103,7 +104,7 @@
                         id="name"
                         placeholder="Nama"
                       /> <br>
-                      <div id="errorName" class="error"></div>
+                      <div id="errorName" class="error">Ini error </div>
                     </td>
                   </tr>
                   <tr>
@@ -146,12 +147,13 @@
                   </tr>
                 </table>
 
-                <div>
-                  <button class="submit-btn" type="submit">
+                <!-- <div> -->
+                  <button class="submit-btn" type="submit"">
                     Submit
                   </button>
-                </div>
+                <!-- </div> -->
               </form>
+
             </section>
           </section>
 
@@ -185,6 +187,6 @@
       </section>
     </footer>
 
-    <script src="JS/script.js"></script>
+    <script src="JS/script.js" />
   </body>
 </html>
