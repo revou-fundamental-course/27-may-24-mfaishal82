@@ -10,7 +10,7 @@ function getName() {
     document.getElementById("name-guest").innerText = name
 }
 
-// getName()
+getName()
 
 document.getElementById("date").innerText = new Date()
 
