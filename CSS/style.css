@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a9e66ccf-90b4-4967-af80-9c1973b2a5a9/dbwbmgc-e62fe5d1-f3c6-4be3-baea-031cecfd0e4e.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2E5ZTY2Y2NmLTkwYjQtNDk2Ny1hZjgwLTljMTk3M2IyYTVhOVwvZGJ3Ym1nYy1lNjJmZTVkMS1mM2M2LTRiZTMtYmFlYS0wMzFjZWNmZDBlNGUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0._XtfdMMwGLEcCcOipFoc7ns6ZWDdRwvs3CcXdaw-KFM);
+  font-family: 'Comic Neue', sans-serif;
   
   /* background-size: cover; */
   /* background-repeat: no-repeat; */
@@ -14,6 +15,7 @@ hr {
 }
 
 h1 {
+  font-family: 'Orbitron', sans-serif;
   font-size: 23px;
 }
 
@@ -27,6 +29,11 @@ h1:hover {
   margin-left: 3%;
   margin-right: 3%;
   background-color: white;
+  background: rgba(255, 255, 255, 0.17);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px 0 rgba(255, 255, 255, 0.884);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   padding-bottom: 1%;
   padding-left: 2%;
   padding-right: 2%;
@@ -97,7 +104,7 @@ nav {
 }
 
 .click-btn {
-  border: 1px solid white;
+  /* border: 1px solid white; */
   margin: 5px;
   font-size: 25px;
   }
@@ -188,6 +195,7 @@ button:hover {
 
 .form-result p {
   margin: 0; 
+  padding-bottom: 10px;
 }
 
 .error {
@@ -229,6 +237,11 @@ footer:hover {
     width: 100%;
     align-items: center;
   }
+  .feature-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
   .container {
     margin-top: 10%;
   }
@@ -240,7 +253,8 @@ footer:hover {
     align-items: center;
   }
   .feature-item {
-    margin: 10px;
+    margin-top: 10px;
+    margin-right: 5px;
   }
   .message-section {
     flex-direction: column;
