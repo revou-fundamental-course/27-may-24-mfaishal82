@@ -146,7 +146,6 @@ h4 {
 .message-section {
   display: flex;
   flex-direction: row;
-  /* justify-content: start; */
   flex: 1;
 }
 
