@@ -82,6 +82,7 @@ nav {
 .nav-links:hover {
   color: white;
   transition: ease-out 0.5s;
+  background-color: rgb(124, 124, 124);
 }
 
 .banner {
