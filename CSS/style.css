@@ -91,6 +91,21 @@ nav {
   border-radius: 10px;
 }
 
+.banner-button {
+  display: flex;
+  justify-content: center;
+}
+
+.click-btn {
+  border: 1px solid white;
+  margin: 5px;
+  font-size: 25px;
+  }
+
+.click-btn:hover {
+  cursor: pointer;
+}
+
 .banner:hover {
   border: double #95ff82;
   transition: 0.5s;

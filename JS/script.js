@@ -10,7 +10,7 @@ function getName() {
     document.getElementById("name-guest").innerText = name
 }
 
-getName()
+// getName()
 
 document.getElementById("date").innerText = new Date()
 
@@ -56,3 +56,29 @@ function setFormResult(name, birthDate, gender, pesan) {
     document.getElementById("genderInput").innerText = gender === "male" ? "Laki-laki" : "Perempuan"
     document.getElementById("messageInput").innerText = pesan
 }
+
+let slideIndex = 1
+showDivs(slideIndex)
+
+function plusDivs(n) {
+    showDivs((slideIndex += n))
+}
+
+function showDivs(n) {
+    let imgList = document.getElementsByClassName("banner")
+    if (n > imgList.length) {
+        slideIndex = 1
+    } else if (n < 1) {
+        slideIndex = imgList.length
+    }
+
+    for (let x = 0; x < imgList.length; x++) {
+    imgList[x].style.display = "none"
+    }
+
+    imgList[slideIndex - 1].style.display = "block"
+}
+
+setInterval(() => {
+    plusDivs(1)
+}, 5000)

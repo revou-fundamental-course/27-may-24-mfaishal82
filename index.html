@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/style.css" />
-    <link rel="icon" type="image/png" href="Assets/logo.png">
+    <link rel="icon" type="image/png" href="Assets/logo.png" />
     <title>DigiSite</title>
   </head>
   <body>
@@ -31,20 +31,32 @@
     <section class="container">
       <section id="home" style="padding-top: 1px">
         <header>
-          <h1>Hi <span id="name-guest">...</span>, Welcome to Digital World Site</h1>
+          <h1>
+            Hi <span id="name-guest">...</span>, Welcome to Digital World Site
+          </h1>
         </header>
 
         <article>
-          <p>Selamat datang di DigiSite, destinasi utama bagi para penggemar Digimon! DigiSite adalah platform yang didedikasikan untuk mengumpulkan informasi, berita, dan konten menarik seputar dunia Digimon.</p>
+          <p>
+            Selamat datang di DigiSite, destinasi utama bagi para penggemar
+            Digimon! DigiSite adalah platform yang didedikasikan untuk
+            mengumpulkan informasi, berita, dan konten menarik seputar dunia
+            Digimon.
+          </p>
 
-          <div >
-            <img class="banner" src="Assets/banner.jpg" alt="banner" />
+          <div>
+            <img class="banner" onclick="plusDivs(1)" src="Assets/banner.jpg" alt="banner" />
+            <img class="banner" onclick="plusDivs(1)" src="Assets/banner2.png" alt="banner" />
+            <img class="banner" onclick="plusDivs(1)" src="Assets/banner3.png" alt="banner" />
+            <div class="banner-button">
+              <div class="click-btn" onclick="plusDivs(-1)">◀️</div>
+              <div class="click-btn" onclick="plusDivs(1)">▶️</div>
+            </div>
           </div>
-
         </article>
       </section>
 
-      <hr style="margin-top: 2% ;"/>
+      <hr style="margin-top: 2%" />
 
       <section id="features">
         <header>
@@ -53,35 +65,43 @@
 
         <article class="feature">
           <div>
-            <a href="https://digimon.fandom.com/wiki/Digivice#Digimon_Adventure_Digivice">
-            <div class="feature-item">
-              <img id="feature1" src="Assets/digivice1.png" alt="feature1" />
-            </div>
+            <a
+              href="https://digimon.fandom.com/wiki/Digivice#Digimon_Adventure_Digivice"
+            >
+              <div class="feature-item">
+                <img id="feature1" src="Assets/digivice1.png" alt="feature1" onmouseover="this.src=('Assets/agumon.png')" onmouseleave="this.src=('Assets/digivice1.png')" />
+              </div>
             </a>
             <h4>Digivice</h4>
           </div>
 
           <div>
             <a href="https://digimon.fandom.com/wiki/Digivice#D-3_Digivice">
-            <div class="feature-item">
-              <img id="feature2" src="Assets/digivice2.png" alt="feature2" style="width: 80px; justify-content: center  ;" />
-            </div>
+              <div class="feature-item">
+                <img
+                  id="feature2"
+                  src="Assets/digivice2.png"
+                  alt="feature2"
+                  style="width: 80px; justify-content: center"
+                  onmouseover="this.src=('Assets/vmon.png')" onmouseleave="this.src=('Assets/digivice2.png')"
+                />
+              </div>
             </a>
             <h4>D-3 Digivice</h4>
           </div>
 
           <div>
             <a href="https://digimon.fandom.com/wiki/Digivice#D-Power">
-            <div class="feature-item">
-              <img id="feature3" src="Assets/digivice3.png" alt="feature3" />
-            </div>
+              <div class="feature-item">
+                <img id="feature3" src="Assets/digivice3.png" alt="feature3" onmouseover="this.src=('Assets/guilmon.png')" onmouseleave="this.src=('Assets/digivice3.png')" />
+              </div>
             </a>
             <h4>D-Power</h4>
           </div>
         </article>
       </section>
 
-      <hr/>
+      <hr />
 
       <section id="message">
         <header>
@@ -91,8 +111,11 @@
         <section class="message-section">
           <section style="flex: 1">
             <section style="flex: 1">
-
-              <form name="formDigiSite" onsubmit="return validateInput()" class="form-container">
+              <form
+                name="formDigiSite"
+                onsubmit="return validateInput()"
+                class="form-container"
+              >
                 <table>
                   <tr>
                     <td><label for="name">Nama</label></td>
@@ -103,15 +126,17 @@
                         name="name"
                         id="name"
                         placeholder="Nama"
-                      /> <br>
+                      />
+                      <br />
                       <div id="errorName" class="error"></div>
                     </td>
                   </tr>
                   <tr>
                     <td><label for="birthDate">Tanggal lahir </label></td>
                     <td><label for=""> : </label></td>
-                    <td><input type="date" name="birthDate" id="birthDate" /> 
-                      <br>
+                    <td>
+                      <input type="date" name="birthDate" id="birthDate" />
+                      <br />
                       <div id="errorBirthDate" class="error"></div>
                     </td>
                   </tr>
@@ -119,7 +144,12 @@
                     <td><label for="gender">Jenis kelamin </label></td>
                     <td><label for=""> : </label></td>
                     <td>
-                      <input type="radio" name="gender" id="male" value="male" />
+                      <input
+                        type="radio"
+                        name="gender"
+                        id="male"
+                        value="male"
+                      />
                       <label for="male">Laki-laki</label>
                       <input
                         type="radio"
@@ -128,11 +158,11 @@
                         value="female"
                       />
                       <label for="female">Perempuan</label>
-                      <br>
+                      <br />
                       <span id="errorGender" class="error"></span>
                     </td>
                   </tr>
-                  <tr style="text-align: left; vertical-align: top;">
+                  <tr style="text-align: left; vertical-align: top">
                     <td><label for="pesan">Pesan </label></td>
                     <td><label for=""> : </label></td>
                     <td>
@@ -141,36 +171,32 @@
                         id="pesan"
                         placeholder="Pesan"
                       ></textarea>
-                      <br>
+                      <br />
                       <span id="errorMessage" class="error"></span>
                     </td>
                   </tr>
                 </table>
 
                 <!-- <div> -->
-                  <button class="submit-btn" type="submit">
-                    Submit
-                  </button>
+                <button class="submit-btn" type="submit">Submit</button>
                 <!-- </div> -->
               </form>
-
             </section>
           </section>
 
           <section class="result">
             <div class="form-result">
-              <p style="margin-bottom: 10px;"><b>Current Time: </b> <span id="date"></span></p>
+              <p style="margin-bottom: 10px">
+                <b>Current Time: </b> <span id="date"></span>
+              </p>
               <p><b>Nama: </b> <span id="nameInput"></span></p>
               <p><b>Tanggal lahir: </b> <span id="birthDateInput"></span></p>
               <p><b>Jenis kelamin: </b> <span id="genderInput"></span></p>
               <p><b>Pesan: </b> <span id="messageInput"></span></p>
             </div>
           </section>
-
         </section>
-
       </section>
-    
     </section>
 
     <hr style="margin-top: 2%" />
@@ -181,7 +207,7 @@
 
         <audio controls>
           <source src="Assets/butterfly.mp3" type="audio/mpeg" />
-        </audio>        
+        </audio>
 
         <p>© 2024 DigiSite</p>
       </section>
