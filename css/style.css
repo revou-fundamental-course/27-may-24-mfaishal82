@@ -48,7 +48,6 @@ h1:hover {
   margin-bottom: 3%;
   background-color: white;
   background: rgba(255, 255, 255, 0.17);
-  border-radius: 16px;
   box-shadow: 0 8px 20px 0 rgba(15, 15, 15, 0.884);
   backdrop-filter: blur(6px);
   padding-top: 2%;
@@ -236,6 +235,7 @@ footer:hover {
   transition: ease-in-out 0.5s;
 }
 
+/* Responsive UI */
 @media only screen and (max-width: 600px) {
   nav {
     flex-direction: column;
@@ -266,7 +266,8 @@ footer:hover {
     margin-left: 30%;
   }
   .container {
-    margin-top: 40%;
+    margin-top: 10%;
+    padding-bottom: 5%;
   }
   .banner {
     height: 250px;
@@ -309,7 +310,7 @@ footer:hover {
 /* Responsive UI banner for Tablet */
 @media only screen and (max-width: 1023px) and (min-width: 601px) {
   .banner {
-    height: 400px;
+    height: 370px;
   }
 }
 
@@ -319,7 +320,7 @@ footer:hover {
     height: 150px;
   }
   .container {
-    margin-top: 60%;
+    margin-top: 20px;
   }
   .feature-container {
     margin-left: 10%;
