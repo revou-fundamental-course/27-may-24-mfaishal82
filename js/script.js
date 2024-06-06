@@ -82,3 +82,27 @@ function showDivs(n) {
 setInterval(() => {
     plusDivs(1)
 }, 5000)
+
+// Tombol back to top
+
+let mybutton = document.getElementById("back-to-top-btn");
+
+ // Ketika pengguna scrolls down 20px dari atas dokumen, tampilkan tombol
+ window.onscroll = function() {scrollFunction()};
+
+ function scrollFunction() {
+     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+         mybutton.style.display = "block";
+     } else {
+         mybutton.style.display = "none";
+     }
+ }
+
+ // Ketika pengguna mengklik tombol, scroll kembali ke atas dokumen
+ function topFunction() {
+     document.body.scrollTop = 0; 
+     document.documentElement.scrollTop = 0;
+ }
+
+ // Event listener untuk tombol
+ mybutton.addEventListener('click', topFunction);
