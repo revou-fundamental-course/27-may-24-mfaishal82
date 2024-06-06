@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="icon" type="image/png" href="Assets/logo.png" />
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <!-- font untuk h1 -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <!-- font biasa -->
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
     <title>DigiSite</title>
   </head>
   <body>
+    <!-- navbar -->
     <nav>
-      <!-- <div class="logo"> -->
         <a href="#">
           <img
             src="Assets/logo.png"
@@ -19,8 +21,7 @@
             class="logo"
           />
         </a>
-      <!-- </div> -->
-
+        <!-- Navigasi menu -->
       <section class="nav-menu">
         <a href="#home" class="nav-links"> Home </a>
         <a href="#features" class="nav-links"> Our Features </a>
@@ -31,6 +32,7 @@
     <hr />
 
     <section class="container">
+      <!-- Home -->
       <section id="home" style="padding-top: 1px">
         <header>
           <h1>
@@ -45,7 +47,7 @@
             mengumpulkan informasi, berita, dan konten menarik seputar dunia
             Digimon.
           </p>
-
+          <!-- Banner -->
           <div>
             <img class="banner" onclick="plusDivs(1)" src="Assets/banner.jpg" alt="banner" />
             <img class="banner" onclick="plusDivs(1)" src="Assets/banner2.png" alt="banner" />
@@ -60,6 +62,7 @@
 
       <hr style="margin-top: 2%" />
 
+      <!-- Features -->
       <section id="features">
         <header>
           <h1>Our Features</h1>
@@ -117,6 +120,7 @@
 
       <hr />
 
+      <!-- Message Us -->
       <section id="message">
         <header>
           <h1>Message Us</h1>
@@ -126,7 +130,7 @@
           <section style="flex: 1">
             <section style="flex: 1">
               <form
-                name="formDigiSite"
+                name="form-digisite"
                 onsubmit="return validateInput()"
                 class="form-container"
               >
@@ -142,7 +146,7 @@
                         placeholder="Nama"
                       />
                       <br />
-                      <div id="errorName" class="error"></div>
+                      <div id="error-name" class="error"></div>
                     </td>
                   </tr>
                   <tr>
@@ -151,7 +155,7 @@
                     <td>
                       <input type="date" name="birthDate" id="birthDate" />
                       <br />
-                      <div id="errorBirthDate" class="error"></div>
+                      <div id="error-birthdate" class="error"></div>
                     </td>
                   </tr>
                   <tr>
@@ -173,7 +177,7 @@
                       />
                       <label for="female">Perempuan</label>
                       <br />
-                      <span id="errorGender" class="error"></span>
+                      <span id="error-gender" class="error"></span>
                     </td>
                   </tr>
                   <tr style="text-align: left; vertical-align: top">
@@ -186,7 +190,7 @@
                         placeholder="Pesan"
                       ></textarea>
                       <br />
-                      <span id="errorMessage" class="error"></span>
+                      <span id="error-message" class="error"></span>
                     </td>
                   </tr>
                 </table>
@@ -196,15 +200,16 @@
             </section>
           </section>
 
+          <!-- Message us result -->
           <section class="result">
             <div class="form-result">
               <p style="margin-bottom: 10px">
                 <b>Current Time: </b> <span id="date"></span>
               </p>
-              <p><b>Nama: </b> <span id="nameInput"></span></p>
-              <p><b>Tanggal lahir: </b> <span id="birthDateInput"></span></p>
-              <p><b>Jenis kelamin: </b> <span id="genderInput"></span></p>
-              <p><b>Pesan: </b> <span id="messageInput"></span></p>
+              <p><b>Nama: </b> <span id="name-input"></span></p>
+              <p><b>Tanggal lahir: </b> <span id="birth-dateinput"></span></p>
+              <p><b>Jenis kelamin: </b> <span id="gender-input"></span></p>
+              <p><b>Pesan: </b> <span id="message-input"></span></p>
             </div>
           </section>
         </section>
@@ -213,11 +218,12 @@
 
     <hr style="margin-top: 2%" />
 
+    <!-- Footer -->
     <footer>
       <section>
         <!-- <img src="Assets/evolution.gif" alt="evolution.gif" style="height: 60px; border-radius: 10px;"> -->
 
-        <audio controls>
+        <audio controls >
           <source src="Assets/butterfly.mp3" type="audio/mpeg" />
         </audio>
 

@@ -15,35 +15,35 @@ getName()
 document.getElementById("date").innerText = new Date()
 
 function validateInput() {
-    const nameInput = document.forms['formDigiSite']['name'].value
-    const birthDateInput = document.forms['formDigiSite']['birthDate'].value
-    const genderInput = document.forms['formDigiSite']['gender'].value
-    const messageInput = document.forms['formDigiSite']['pesan'].value
+    const nameInput = document.forms['form-digisite']['name'].value
+    const birthDateInput = document.forms['form-digisite']['birthDate'].value
+    const genderInput = document.forms['form-digisite']['gender'].value
+    const messageInput = document.forms['form-digisite']['pesan'].value
     
     if(!nameInput) {
-        document.getElementById("errorName").innerText = "Nama tidak boleh kosong!";
+        document.getElementById("error-name").innerText = "Nama tidak boleh kosong!";
         return false;
     }
 
     if(!birthDateInput) {
-        document.getElementById("errorBirthDate").innerText = "Tanggal lahir tidak boleh kosong!"
+        document.getElementById("error-birthdate").innerText = "Tanggal lahir tidak boleh kosong!"
         return false
     }
 
     if(!genderInput) {
-        document.getElementById("errorGender").innerText = "Jenis kelamin tidak boleh kosong!"
+        document.getElementById("error-gender").innerText = "Jenis kelamin tidak boleh kosong!"
         return false
     }
 
     if(messageInput.split(" ").length < 5) {
-        document.getElementById("errorMessage").innerText = "Pesan harus terdiri dari minimal 5 kata!"
+        document.getElementById("error-message").innerText = "Pesan harus terdiri dari minimal 5 kata!"
         return false
     }
 
-    document.getElementById("errorName").innerText = "";
-    document.getElementById("errorBirthDate").innerText = "";
-    document.getElementById("errorGender").innerText = "";
-    document.getElementById("errorMessage").innerText = "";
+    document.getElementById("error-name").innerText = "";
+    document.getElementById("error-birthdate").innerText = "";
+    document.getElementById("error-gender").innerText = "";
+    document.getElementById("error-message").innerText = "";
     
     setFormResult(nameInput, birthDateInput, genderInput, messageInput);
     
@@ -51,10 +51,10 @@ function validateInput() {
 }
 
 function setFormResult(name, birthDate, gender, pesan) {
-    document.getElementById("nameInput").innerText = name
-    document.getElementById("birthDateInput").innerText = birthDate.split("-").reverse().join("/")
-    document.getElementById("genderInput").innerText = gender === "male" ? "Laki-laki" : "Perempuan"
-    document.getElementById("messageInput").innerText = pesan
+    document.getElementById("name-input").innerText = name
+    document.getElementById("birth-dateinput").innerText = birthDate.split("-").reverse().join("/")
+    document.getElementById("gender-input").innerText = gender === "male" ? "Laki-laki" : "Perempuan"
+    document.getElementById("message-input").innerText = pesan
 }
 
 let slideIndex = 1
