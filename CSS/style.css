@@ -22,12 +22,14 @@ h1 {
 h1:hover {
   color: #1fcc00;
   transition: ease-in-out 0.5s;
+  cursor: default;
 }
 
 .container {
-  margin-top: 3%;
+  margin-top: 10%;
   margin-left: 3%;
   margin-right: 3%;
+  margin-bottom: 3%;
   background-color: white;
   background: rgba(255, 255, 255, 0.17);
   border-radius: 16px;
@@ -52,8 +54,15 @@ nav {
   justify-content: space-between;
   background-color: rgb(131, 131, 131);
   color: #39ff14;
-  padding: 5px;
   align-items: center;
+  position: relative;
+  position: fixed;
+  /* overflow-x: auto;
+  overflow-y: auto; */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 }
 
 .logo {
@@ -88,7 +97,7 @@ nav {
 .banner {
   height: 578px;
   width: 100%;
-  /* background: url("/Assets/banner.jpg"); */
+  /* background: url("/assets/banner.jpg"); */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -104,7 +113,6 @@ nav {
 }
 
 .click-btn {
-  /* border: 1px solid white; */
   margin: 5px;
   font-size: 25px;
   }
@@ -186,6 +194,7 @@ button:hover {
 .form-result {
   padding-top: 50px;
   padding-left: 10px;
+  margin-bottom: 20px;
 }
 
 .result:hover {
@@ -243,9 +252,10 @@ footer:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-left: 30%;
   }
   .container {
-    margin-top: 10%;
+    margin-top: 40%;
   }
   .banner {
     height: 250px;
@@ -260,6 +270,9 @@ footer:hover {
     margin-top: 10px;
     margin-right: 5px;
   }
+  .message {
+    margin-bottom: 10px;
+  }
   .message-section {
     flex-direction: column;
   }
@@ -272,5 +285,29 @@ footer:hover {
   footer section {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+/* Responsive UI banner for PC */
+@media only screen and (min-width: 1024px) {
+  .banner {
+    height: 578px;
+  }
+}
+
+/* Responsive UI banner for Tablet */
+@media only screen and (max-width: 1023px) and (min-width: 601px) {
+  .banner {
+    height: 400px;
+  }
+}
+
+/* Responsive UI banner for Phone */
+@media only screen and (max-width: 400px) {
+  .banner {
+    height: 150px;
+  }
+  .feature-container {
+    margin-left: 10%;
   }
 }

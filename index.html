@@ -3,24 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/style.css" />
-    <link rel="icon" type="image/png" href="Assets/logo.png" />
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+    <!-- font untuk h1 -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <!-- font biasa -->
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
     <title>DigiSite</title>
   </head>
   <body>
+    <!-- navbar -->
     <nav>
-      <!-- <div class="logo"> -->
         <a href="#">
           <img
-            src="Assets/logo.png"
+            src="assets/logo.png"
             alt="logo"
             class="logo"
           />
         </a>
-      <!-- </div> -->
-
+        <!-- Navigasi menu -->
       <section class="nav-menu">
         <a href="#home" class="nav-links"> Home </a>
         <a href="#features" class="nav-links"> Our Features </a>
@@ -31,6 +32,7 @@
     <hr />
 
     <section class="container">
+      <!-- Home -->
       <section id="home" style="padding-top: 1px">
         <header>
           <h1>
@@ -45,11 +47,11 @@
             mengumpulkan informasi, berita, dan konten menarik seputar dunia
             Digimon.
           </p>
-
+          <!-- Banner -->
           <div>
-            <img class="banner" onclick="plusDivs(1)" src="Assets/banner.jpg" alt="banner" />
-            <img class="banner" onclick="plusDivs(1)" src="Assets/banner2.png" alt="banner" />
-            <img class="banner" onclick="plusDivs(1)" src="Assets/banner3.png" alt="banner" />
+            <img class="banner" onclick="plusDivs(1)" src="assets/banner.jpg" alt="banner" />
+            <img class="banner" onclick="plusDivs(1)" src="assets/banner2.png" alt="banner" />
+            <img class="banner" onclick="plusDivs(1)" src="assets/banner3.png" alt="banner" />
             <div class="banner-button">
               <div class="click-btn" onclick="plusDivs(-1)">◀️</div>
               <div class="click-btn" onclick="plusDivs(1)">▶️</div>
@@ -60,6 +62,7 @@
 
       <hr style="margin-top: 2%" />
 
+      <!-- Features -->
       <section id="features">
         <header>
           <h1>Our Features</h1>
@@ -73,9 +76,9 @@
             >
               <div class="feature-item">
                 <img id="feature1" 
-                src="Assets/digivice1.png" 
+                src="assets/digivice1.png" 
                 alt="feature1" 
-                onmouseover="this.src=('Assets/agumon.png')" onmouseleave="this.src=('Assets/digivice1.png')" />
+                onmouseover="this.src=('assets/agumon.png')" onmouseleave="this.src=('assets/digivice1.png')" />
               </div>
             </a>
             <h4>Digivice</h4>
@@ -88,10 +91,10 @@
               <div class="feature-item">
                 <img
                   id="feature2"
-                  src="Assets/digivice2.png"
+                  src="assets/digivice2.png"
                   alt="feature2"
                   style="width: 80px; align-self: center; margin-left: 15px;"
-                  onmouseover="this.src=('Assets/vmon.png')" onmouseleave="this.src=('Assets/digivice2.png')"
+                  onmouseover="this.src=('assets/vmon.png')" onmouseleave="this.src=('assets/digivice2.png')"
                 />
               </div>
             </a>
@@ -104,10 +107,10 @@
             >
               <div class="feature-item">
                 <img id="feature3" 
-                src="Assets/digivice3.png" 
+                src="assets/digivice3.png" 
                 alt="feature3" 
                 style="width: 80px; align-self: center; margin-left: 15px;"
-                onmouseover="this.src=('Assets/guilmon.png')" onmouseleave="this.src=('Assets/digivice3.png')" />
+                onmouseover="this.src=('assets/guilmon.png')" onmouseleave="this.src=('assets/digivice3.png')" />
               </div>
             </a>
             <h4>D-Power</h4>
@@ -117,6 +120,7 @@
 
       <hr />
 
+      <!-- Message Us -->
       <section id="message">
         <header>
           <h1>Message Us</h1>
@@ -126,7 +130,7 @@
           <section style="flex: 1">
             <section style="flex: 1">
               <form
-                name="formDigiSite"
+                name="form-digisite"
                 onsubmit="return validateInput()"
                 class="form-container"
               >
@@ -142,7 +146,7 @@
                         placeholder="Nama"
                       />
                       <br />
-                      <div id="errorName" class="error"></div>
+                      <div id="error-name" class="error"></div>
                     </td>
                   </tr>
                   <tr>
@@ -151,7 +155,7 @@
                     <td>
                       <input type="date" name="birthDate" id="birthDate" />
                       <br />
-                      <div id="errorBirthDate" class="error"></div>
+                      <div id="error-birthdate" class="error"></div>
                     </td>
                   </tr>
                   <tr>
@@ -173,7 +177,7 @@
                       />
                       <label for="female">Perempuan</label>
                       <br />
-                      <span id="errorGender" class="error"></span>
+                      <span id="error-gender" class="error"></span>
                     </td>
                   </tr>
                   <tr style="text-align: left; vertical-align: top">
@@ -186,7 +190,7 @@
                         placeholder="Pesan"
                       ></textarea>
                       <br />
-                      <span id="errorMessage" class="error"></span>
+                      <span id="error-message" class="error"></span>
                     </td>
                   </tr>
                 </table>
@@ -196,15 +200,16 @@
             </section>
           </section>
 
+          <!-- Message us result -->
           <section class="result">
             <div class="form-result">
               <p style="margin-bottom: 10px">
                 <b>Current Time: </b> <span id="date"></span>
               </p>
-              <p><b>Nama: </b> <span id="nameInput"></span></p>
-              <p><b>Tanggal lahir: </b> <span id="birthDateInput"></span></p>
-              <p><b>Jenis kelamin: </b> <span id="genderInput"></span></p>
-              <p><b>Pesan: </b> <span id="messageInput"></span></p>
+              <p><b>Nama: </b> <span id="name-input"></span></p>
+              <p><b>Tanggal lahir: </b> <span id="birth-dateinput"></span></p>
+              <p><b>Jenis kelamin: </b> <span id="gender-input"></span></p>
+              <p><b>Pesan: </b> <span id="message-input"></span></p>
             </div>
           </section>
         </section>
@@ -213,18 +218,19 @@
 
     <hr style="margin-top: 2%" />
 
+    <!-- Footer -->
     <footer>
       <section>
-        <!-- <img src="Assets/evolution.gif" alt="evolution.gif" style="height: 60px; border-radius: 10px;"> -->
+        <!-- <img src="assets/evolution.gif" alt="evolution.gif" style="height: 60px; border-radius: 10px;"> -->
 
-        <audio controls>
-          <source src="Assets/butterfly.mp3" type="audio/mpeg" />
+        <audio controls >
+          <source src="assets/butterfly.mp3" type="audio/mpeg" />
         </audio>
 
         <p>© 2024 DigiSite</p>
       </section>
     </footer>
 
-    <script src="JS/script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
