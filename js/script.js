@@ -1,5 +1,6 @@
-// javascript code
+//! javascript code
 
+// prompt untuk memasukkan nama
 function getName() {
     let name = prompt("Masukkan nama anda terlebih dahulu", "")
 
@@ -12,8 +13,10 @@ function getName() {
 
 getName()
 
-document.getElementById("date").innerText = new Date()
+//! menampilkan tanggal dan waktu
+document.getElementById("date").innerText = new Date().toLocaleDateString("id-ID", { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })
 
+//! validasi form
 function validateInput() {
     const nameInput = document.forms['form-digisite']['name'].value
     const birthDateInput = document.forms['form-digisite']['birthDate'].value
@@ -49,7 +52,7 @@ function validateInput() {
     
     return false;
 }
-
+// menampilkan hasil inputan form
 function setFormResult(name, birthDate, gender, pesan) {
     document.getElementById("name-input").innerText = name
     document.getElementById("birth-dateinput").innerText = birthDate.split("-").reverse().join("/")
@@ -57,6 +60,7 @@ function setFormResult(name, birthDate, gender, pesan) {
     document.getElementById("message-input").innerText = pesan
 }
 
+//! Banner slider
 let slideIndex = 1
 showDivs(slideIndex)
 
@@ -83,7 +87,7 @@ setInterval(() => {
     plusDivs(1)
 }, 5000)
 
-// Tombol back to top
+//! Tombol back to top
 
 let mybutton = document.getElementById("back-to-top-btn");
 
